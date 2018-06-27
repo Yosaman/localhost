@@ -16,8 +16,8 @@ if (isset($query) and !empty($query)){
         $link = str_replace('%', '', $row[0]['full']);
         header("Location: $link");
     } else {
-        require '404.php';
+        require __DIR__. '/templates/404.php';
     }
 }else {
-    require 'main.php';
+    require __DIR__ . '/templates/main.php';
 }

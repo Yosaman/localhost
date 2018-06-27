@@ -76,6 +76,9 @@
                 }
             })
         })
+        $('#deleteText').click(function () {
+            $('#fullLink').val('');
+        })
     });
 </script>
 </body>
